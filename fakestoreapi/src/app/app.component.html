@@ -1,0 +1,119 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<div class="container mt-5">
+  
+  <h2>{{ title }}</h2>
+  
+  <table class="table table-striped">
+    <thead>
+        <tr>
+          <th>ID</th>
+          <th>PRODUCTO</th>
+          <th>PRECIO</th>
+          <th>DESCRIPCION</th>
+          <th>CATEGORIA</th>
+          <th>MUESTRA</th>
+          <th>CALIFICACION</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of Products">
+        <td>{{ user.id }}</td>
+        <td>{{ user.title }}</td>
+        <td>{{ user.price }}</td>
+        <td>{{ user.description }}</td>
+        <td>{{ user.category }}</td>
+        <td><img src="{{ user.image }}" width="281" height="359"></td>
+        <td>{{ user.rating.rate }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--<div class="course-card" *ngFor="let user of Products">
+
+    <div class="course-title" >
+        {{ user.title }}
+    </div>
+
+    <ng-template>
+
+        <p>No imade is available</p>
+
+    </ng-template>
+
+    <div class="course-description">
+        {{ course.longDescription }}
+    </div>
+
+    <button (click)="onCourseViewed()">View Course</button>
+
+</div>
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+<a id="view-code" href="https://codepen.io/virgilpana/pen/RNYQwB" target="_blank">VIEW CODE</a>
+<div id="make-3D-space">
+    <div id="product-card">
+        <div id="product-front" *ngFor="let user of Products">
+        	<div class="shadow"></div>
+           <img src="{{ user.image }}" width="281" height="359"/>
+            <div class="image_overlay"></div>
+            <div id="view_details">View details</div>
+            <div class="stats">        	
+                <div class="stats-container">
+                    <span class="product_price">{{ user.price }}</span>
+                    <span class="product_name">{{ user.title }}</span>    
+                    <p>{{ user.description }}</p>                                            
+                    
+                    <div class="product-options">
+                    <strong>CATEGORY</strong>
+                    <span>{{ user.category }}</span>
+                    <strong>RATE</strong>
+                    <span>{{ user.rating.rate }} + "/ 5.0"</span>
+                    
+                </div>                       
+                </div>                         
+            </div>
+        </div>
+        <div id="product-back">
+	        <div class="shadow"></div>
+            <div id="carousel">
+                <ul>
+                    <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/t-shirt-large.png" alt="" /></li>
+                    <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/t-shirt-large2.png" alt="" /></li>
+                    <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/t-shirt-large3.png" alt="" /></li>
+                </ul>
+                <div class="arrows-perspective">
+                    <div class="carouselPrev">
+                        <div class="y"></div>
+	                    <div class="x"></div>
+                    </div>
+                    <div class="carouselNext">
+                        <div class="y"></div>
+	                    <div class="x"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="flip-back">
+            	<div id="cy"></div>
+                <div id="cx"></div>
+            </div>
+        </div>	  
+    </div>	
+</div>	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
